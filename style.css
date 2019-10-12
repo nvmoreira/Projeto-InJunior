@@ -1,0 +1,469 @@
+/*reset*/
+*,h1,h2,h3,h4,h5,h6,p,ul,img,div,li{
+	margin:0;
+	padding:0;
+}
+
+/*formatação básica da aparência do site*/
+body{
+	font-family: "Helvetica, sans-serif";
+}
+
+.menu{
+	background: #d2b48c;
+}
+
+.menu a{
+	color:white;
+	text-decoration: none;
+}
+
+.menu li{
+	list-style: none;
+}
+
+.menu-container{
+	max-width: 960px;
+	padding: 18px;
+	margin: 0 auto;
+}
+
+.menu-nav{
+	float: right;
+}
+
+.menu-nav li{
+	display: inline-block;
+}
+
+.menu-nav li a{
+	padding: 15px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*formatação da aparência da primeira seção da página index*/
+.intro{
+	padding: 150px 0px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #252525;
+	background: url("img/foto1.jpg")no-repeat center center;
+	background-size: cover;
+}
+
+.intro h1{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro h1::after{
+	content: "";
+	display:block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin:10px auto;
+	transition: 1s;
+}
+
+.intro h1:hover::after{
+	width: 300px;
+}
+
+.intro p{
+	font-size: 1.125em;
+	font-style: italic;
+}
+
+/*segunda seção da página index, os filhotes, essa seção se repete na página adote*/
+.filhotes{
+	padding: 60px 0;
+	background: #F5FFFA;
+}
+
+.filhotes-container{
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 30px;
+}
+
+.filhotes-container::after,
+.filhotes-container::before{
+	content: '';
+	display:table;
+	clear:both;
+}
+
+.filhotes-foto{
+	border-radius: 10px;
+	width: 320px;
+}
+
+.filhotes-item{
+	width: 460px;
+	padding: 20px;
+	float: right;
+}
+
+.filhotes-item img{
+	float: left;
+	width: 460px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.filhotes-item h2{
+	text-align: left;
+	font-size: 2.25em;
+	color: #006400;
+}
+
+.filhotes-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	text-align: left;
+	color: #006400;
+}
+
+/*botão deve redirecionar para a página adote*/
+.filhotes-btn{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #8FBC8F;
+	color: #8FBC8F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 20px auto;
+	transition: 0.5s;
+}
+
+.filhotes-btn:hover{
+	color: #F5FFFA;
+	box-shadow: 180px 0 0 0 #8FBC8F inset;
+}
+
+/*terceira seção do index, sobre o projeto*/
+.projeto{
+	background: #fff8dc;
+	padding: 60px 0;
+	border-top: 3px solid #faebd7;
+	border-bottom: 3px solid #faebd7;
+}
+
+.projeto-container{
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.projeto-item{
+	width: 300px;
+	margin: 0px 8px;
+	display: inline-block;
+}
+
+.projeto-item a{
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.projeto-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+/*nesse ponto do projeto os botões dessa seção são decorativos*/
+.projeto-btn{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #8FBC8F;
+	color: #8FBC8F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 20px auto;
+	transition: 0.5s;
+}
+
+.projeto-btn:hover{
+	color: #fff8dc;
+	box-shadow: 180px 0 0 0 #8FBC8F inset;
+}
+
+/*rodapé que deve se repetir em todas as páginas*/
+.footer{
+	background: #90ee90;
+s}
+
+.footer-container{
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 22px;
+	font-size: 1.125em;
+}
+
+.footer-container img{
+	float: right;
+}
+
+.footer p{
+	color: #8b4513;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*primera seção da página adote, igual à página index na formatação porém com outra foto de background*/
+.intro-adote{
+	padding: 150px 0px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #252525;
+	background: url("img/foto4.jpg")no-repeat center center;
+	background-size: cover;
+}
+
+.intro-adote h1{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro-adote h1::after{
+	content: "";
+	display:block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin:10px auto;
+	transition: 1s;
+}
+
+.intro-adote h1:hover::after{
+	width: 300px;
+}
+
+.intro-adote p{
+	font-size: 1.125em;
+	font-style: italic;
+}
+
+/*os botões devem redirecionar para a página contato*/
+.adocao-btn{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #8FBC8F;
+	color: #8FBC8F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 20px auto;
+	transition: 0.5s;
+}
+
+.adocao-btn:hover{
+	color: #fff8dc;
+	box-shadow: 180px 0 0 0 #8FBC8F inset;
+}
+
+/*primeira seção da página contato, igual à página index na formatação porém com outra foto de background*/
+.intro-contato{
+	padding: 150px 0px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #252525;
+	background: url("img/foto5.jpg")no-repeat center center;
+	background-size: cover;
+}
+
+.intro-contato h1{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro-contato h1::after{
+	content: "";
+	display:block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin:10px auto;
+	transition: 1s;
+}
+
+.intro-contato h1:hover::after{
+	width: 300px;
+}
+
+.intro-contato p{
+	font-size: 1.125em;
+	font-style: italic;
+}
+
+.intro-contato{
+	padding: 150px 0px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #252525;
+	background: url("img/foto5.jpg")no-repeat center center;
+	background-size: cover;
+}
+
+.intro-contato h1{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro-contato h1::after{
+	content: "";
+	display:block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin:10px auto;
+	transition: 1s;
+}
+
+.intro-contato h1:hover::after{
+	width: 300px;
+}
+
+.intro-contato p{
+	font-size: 1.125em;
+	font-style: italic;
+}
+
+/*segunda seção da página contato, contém o formulário para se candidatar à adoção*/
+.formulario{
+	box-sizing: border-box;
+	background: #fff8dc;
+	padding: 60px 0;
+	border-top: 3px solid #faebd7;
+	border-bottom: 3px solid #faebd7;
+}
+
+.formulario-container{
+  	margin: 0 auto;
+	max-width: 960px;
+}
+
+.coluna1{
+	float: left;
+  	width: 25%;
+  	margin-top: 6px;
+}
+
+.coluna2{
+  	float: left;
+  	width: 75%;
+  	margin-top: 6px;
+}
+
+.linha:after{
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.nome-linha{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	color: #006400;
+}
+
+input[type=text], select, textarea{
+	color: #006400;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #8FBC8F;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label{
+	padding: 12px 12px 12px 0;
+  	display: inline-block;
+}
+
+input[type=tel], select, textarea{
+	color: #006400;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #8FBC8F;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label{
+  	padding: 12px 12px 12px 0;
+  	display: inline-block;
+}
+
+input[type=email], select, textarea{
+	color: #006400;
+  	width: 100%;
+  	padding: 12px;
+  	border: 1px solid #8FBC8F;
+  	border-radius: 4px;
+  	resize: vertical;
+}
+
+label{
+  	padding: 12px 12px 12px 0;
+  	display: inline-block;
+}
+
+/*botão para enviar o formulário preenchido, nesse ponto do projeto ele é apenas decorativo*/
+input[type=submit]{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #8FBC8F;
+	color: #8FBC8F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 20px auto;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	color: #fff8dc;
+	box-shadow: 180px 0 0 0 #8FBC8F inset;
+}
+
+/*botão back to top presente em todas as páginas*/
+#topbtn {
+  	display: none;
+  	position: fixed;
+  	bottom: 20px;
+  	right: 30px; 
+  	z-index: 99; 
+  	border: solid;
+  	outline: none;
+  	background-color: #f0f8ff;
+  	color: #deb887;
+  	cursor: pointer;
+  	padding: 15px;
+  	border-radius: 10px;
+  	font-size: 18px;
+  	text-transform: uppercase;
+}
+
+#topbtn:nhover {
+  	background-color: #555; /* Add a dark-grey background on hover */
+}
